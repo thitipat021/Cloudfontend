@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+	<link rel="icon" href="pic/logo-test-black.png">
+	<title>Bloggu</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css/main_style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+		body{
+			background-size: cover;
+			background-color: rgb(241, 241, 241);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			/* height: 100%; */
+			/* overflow: hidden; */
+		}
+		.btn{
+			border-radius: 8px;
+		}
+		.card{
+			background-color: rgba(255, 255, 255, 0.8);
+			/* border: 1px solid #17a2b8; */
+		}
+		@keyframes fadein {
+			from { opacity: 0; }
+			to   { opacity: 1; }
+		}
+	</style>
+
+</head>
+<body class="h-100">
+    <div id="app" class="h-100">
+        <div id="content" class="d-flex flex-column h-100">
+            <!-- Navbar -->
+			<nav class="navbar navbar-expand-xl bg-light navbar-light bg-company-light">
+				<!-- Brand -->
+				<a class="navbar-brand ml-5" href="#">Mini Blog</a>
+
+				<!-- Toggler/collapsibe Button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<!-- Right side link -->
+					<ul class="navbar-nav mr-5">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+								News
+							</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Create Blog</a>
+								<a class="dropdown-item" href="#">Blahblah</a>
+							</div>
+                        </li>
+                        
+                        <li class="nav-item">
+							<a class="nav-link" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Politics</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="#">Tech</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="#">Entertainment</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="#">Travel</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="#">Sports</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="#"><img src="pic/search.png" width="20"></a>
+						</li>
+					</ul>
+				</div> 
+            </nav>
+            <!-- Content -->
+            <div class="container flex-grow-1">
+                <div  class="container">
+					<div class="row mb-5">
+						<div class="col-auto">
+							<h3><br>Recent Posts</h3>
+						</div>
+					</div>
+					<div class="row">
+					  <div class="col-md-4">
+						<div class="card my-5">
+						  <img src="pic/img_1.jpg" class="card-img-top img-fluid"/>
+						  <div class="card-body">
+							<button type="button" class="btn btn-info btn-sm" style="padding: 1.5pt; font-size: 3mm;">food</button>
+							<h5 class="card-title">
+							  <div>The AI magically removes moving objects from videos.</div>
+							</h5>
+							<p class="card-text">
+							  <small class="text-muted">By:  <span>Steve Roger</span> - April 4, 2020</small><br/>
+							  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro est.</p>
+							  <a href="#" class="text-decoration-none">Read More</a>
+							</p>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-md-4">
+						<div class="card my-5">
+						  <img src="pic/img_2.jpg" class="card-img-top img-fluid"/>
+						  <div class="card-body">
+							<button type="button" class="btn btn-success btn-sm" style="padding: 1.5pt; font-size: 3mm;">nature</button>
+							<h5 class="card-title">
+							  <div>The AI magically removes moving objects from videos.</div>
+							</h5>
+							<p class="card-text">
+							  <small class="text-muted">By:  <span>Steve Roger</span> - April 4, 2020</small><br/>
+							  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro est.</p>
+							  <a href="#" class="text-decoration-none">Read More</a>
+							</p>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-md-4">
+						<div class="card my-5">
+						  <img src="pic/img_3.jpg" class="card-img-top img-fluid"/>
+						  <div class="card-body">
+							<button type="button" class="btn btn-warning btn-sm" style="padding: 1.5pt; font-size: 3mm;">travel</button>
+							<h5 class="card-title">
+							  <div>The AI magically removes moving objects from videos.</div>
+							</h5>
+							<p class="card-text">
+							  <small class="text-muted">By:  <span>Steve Roger</span> - April 4, 2020</small><br/>
+							  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro est.</p>
+							  <a href="#" class="text-decoration-none">Read More</a>
+							</p>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-md-4">
+						<div class="card my-5">
+						  <img src="pic/img_3.jpg" class="card-img-top img-fluid"/>
+						  <div class="card-body">
+							<button type="button" class="btn btn-warning btn-sm" style="padding: 1.5pt; font-size: 3mm;">travel</button>
+							<h5 class="card-title">
+							  <div>The AI magically removes moving objects from videos.</div>
+							</h5>
+							<p class="card-text">
+							  <small class="text-muted">By:  <span>Steve Roger</span> - April 4, 2020</small><br/>
+							  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro est.</p>
+							  <a href="#" class="text-decoration-none">Read More</a>
+							</p>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div class="footer" style="background-color: white">
+				<div class="container text-center">
+					<p class="content1">Contact Us</p>
+					<p class="content2">
+						<a class="logo ml-1" href="#" target="_blank"><img src="pic/gitimg.png" height="50px" width="50px"></a>
+					</p>
+				</div>
+			</div>
+        </div>
+    </div>
+</body>
+</html>
